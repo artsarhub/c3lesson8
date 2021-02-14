@@ -13,9 +13,12 @@
 		AC2075CC25D03BB9005E6AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2075CA25D03BB9005E6AAD /* Main.storyboard */; };
 		AC2075CE25D03BBA005E6AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2075CD25D03BBA005E6AAD /* Assets.xcassets */; };
 		AC2075D125D03BBA005E6AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2075CF25D03BBA005E6AAD /* LaunchScreen.storyboard */; };
+		AC2075DA25D03BE3005E6AAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC2075D925D03BE3005E6AAD /* GoogleService-Info.plist */; };
+		F40553089C70A0C6DB93908F /* Pods_Lesson8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDD5051A1B5E1489B979C77 /* Pods_Lesson8.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D6C7903B8831DD8D71E7F7C /* Pods-Lesson8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson8.debug.xcconfig"; path = "Target Support Files/Pods-Lesson8/Pods-Lesson8.debug.xcconfig"; sourceTree = "<group>"; };
 		AC2075C125D03BB9005E6AAD /* Lesson8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2075C425D03BB9005E6AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC2075C625D03BB9005E6AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		AC2075CD25D03BBA005E6AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC2075D025D03BBA005E6AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC2075D225D03BBA005E6AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC2075D925D03BE3005E6AAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C009D17893B48923FB44AB6A /* Pods-Lesson8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson8.release.xcconfig"; path = "Target Support Files/Pods-Lesson8/Pods-Lesson8.release.xcconfig"; sourceTree = "<group>"; };
+		FCDD5051A1B5E1489B979C77 /* Pods_Lesson8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40553089C70A0C6DB93908F /* Pods_Lesson8.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47AEDA919A1B454E15B57040 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCDD5051A1B5E1489B979C77 /* Pods_Lesson8.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC2075B825D03BB9005E6AAD = {
 			isa = PBXGroup;
 			children = (
 				AC2075C325D03BB9005E6AAD /* Lesson8 */,
 				AC2075C225D03BB9005E6AAD /* Products */,
+				E1FB9DDF65CED91385F79358 /* Pods */,
+				47AEDA919A1B454E15B57040 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +79,20 @@
 				AC2075CA25D03BB9005E6AAD /* Main.storyboard */,
 				AC2075CD25D03BBA005E6AAD /* Assets.xcassets */,
 				AC2075CF25D03BBA005E6AAD /* LaunchScreen.storyboard */,
+				AC2075D925D03BE3005E6AAD /* GoogleService-Info.plist */,
 				AC2075D225D03BBA005E6AAD /* Info.plist */,
 			);
 			path = Lesson8;
+			sourceTree = "<group>";
+		};
+		E1FB9DDF65CED91385F79358 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C7903B8831DD8D71E7F7C /* Pods-Lesson8.debug.xcconfig */,
+				C009D17893B48923FB44AB6A /* Pods-Lesson8.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC2075D525D03BBA005E6AAD /* Build configuration list for PBXNativeTarget "Lesson8" */;
 			buildPhases = (
+				F42B14B77557CEC70C794425 /* [CP] Check Pods Manifest.lock */,
 				AC2075BD25D03BB9005E6AAD /* Sources */,
 				AC2075BE25D03BB9005E6AAD /* Frameworks */,
 				AC2075BF25D03BB9005E6AAD /* Resources */,
+				9BDC3B5FA05327662C80DA6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2075D125D03BBA005E6AAD /* LaunchScreen.storyboard in Resources */,
+				AC2075DA25D03BE3005E6AAD /* GoogleService-Info.plist in Resources */,
 				AC2075CE25D03BBA005E6AAD /* Assets.xcassets in Resources */,
 				AC2075CC25D03BB9005E6AAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BDC3B5FA05327662C80DA6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson8/Pods-Lesson8-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson8/Pods-Lesson8-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lesson8/Pods-Lesson8-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42B14B77557CEC70C794425 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lesson8-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC2075BD25D03BB9005E6AAD /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		AC2075D625D03BBA005E6AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6C7903B8831DD8D71E7F7C /* Pods-Lesson8.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		AC2075D725D03BBA005E6AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C009D17893B48923FB44AB6A /* Pods-Lesson8.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
