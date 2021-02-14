@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		AC2075CE25D03BBA005E6AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2075CD25D03BBA005E6AAD /* Assets.xcassets */; };
 		AC2075D125D03BBA005E6AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2075CF25D03BBA005E6AAD /* LaunchScreen.storyboard */; };
 		AC2075DA25D03BE3005E6AAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC2075D925D03BE3005E6AAD /* GoogleService-Info.plist */; };
+		AC2C4BAB25D9264D0004BB43 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2C4BAA25D9264D0004BB43 /* AppError.swift */; };
+		AC2C4BAF25D927DC0004BB43 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2C4BAE25D927DC0004BB43 /* ViewController+Ext.swift */; };
 		F40553089C70A0C6DB93908F /* Pods_Lesson8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDD5051A1B5E1489B979C77 /* Pods_Lesson8.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		AC2075D025D03BBA005E6AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC2075D225D03BBA005E6AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC2075D925D03BE3005E6AAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC2C4BAA25D9264D0004BB43 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		AC2C4BAE25D927DC0004BB43 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
 		C009D17893B48923FB44AB6A /* Pods-Lesson8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson8.release.xcconfig"; path = "Target Support Files/Pods-Lesson8/Pods-Lesson8.release.xcconfig"; sourceTree = "<group>"; };
 		FCDD5051A1B5E1489B979C77 /* Pods_Lesson8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +77,7 @@
 		AC2075C325D03BB9005E6AAD /* Lesson8 */ = {
 			isa = PBXGroup;
 			children = (
+				AC2C4BAD25D927C10004BB43 /* Extensions */,
 				AC2075C425D03BB9005E6AAD /* AppDelegate.swift */,
 				AC2075C625D03BB9005E6AAD /* SceneDelegate.swift */,
 				AC2075C825D03BB9005E6AAD /* ViewController.swift */,
@@ -81,8 +86,17 @@
 				AC2075CF25D03BBA005E6AAD /* LaunchScreen.storyboard */,
 				AC2075D925D03BE3005E6AAD /* GoogleService-Info.plist */,
 				AC2075D225D03BBA005E6AAD /* Info.plist */,
+				AC2C4BAA25D9264D0004BB43 /* AppError.swift */,
 			);
 			path = Lesson8;
+			sourceTree = "<group>";
+		};
+		AC2C4BAD25D927C10004BB43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC2C4BAE25D927DC0004BB43 /* ViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E1FB9DDF65CED91385F79358 /* Pods */ = {
@@ -91,7 +105,6 @@
 				3D6C7903B8831DD8D71E7F7C /* Pods-Lesson8.debug.xcconfig */,
 				C009D17893B48923FB44AB6A /* Pods-Lesson8.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,9 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2C4BAB25D9264D0004BB43 /* AppError.swift in Sources */,
 				AC2075C925D03BB9005E6AAD /* ViewController.swift in Sources */,
 				AC2075C525D03BB9005E6AAD /* AppDelegate.swift in Sources */,
 				AC2075C725D03BB9005E6AAD /* SceneDelegate.swift in Sources */,
+				AC2C4BAF25D927DC0004BB43 /* ViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
